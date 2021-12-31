@@ -6,9 +6,9 @@ import cv2
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './static/uploads/'
-model = load_model('seledri_jeruknipis_class_model.h5')
+model = load_model('jahe_lengkuas_class_model.h5')
 
-class_dict = {0: 'Jeruk Nipis (Jeruk Nipis)', 1: 'Seledri (Seledri)'}
+class_dict = {0: 'jahe (Nangka)', 1: 'lengkuas (Sirih)'}
 
 def predict_label(img_path):
     query = cv2.imread(img_path)
